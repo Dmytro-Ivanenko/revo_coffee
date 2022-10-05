@@ -4,7 +4,6 @@
 
 .hero-header {
 	width: 100vw;
-	max-width: 1404px;
 	height: 100vh;
 	max-height: 768px;
 }
@@ -18,10 +17,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	width: 100%;
 	padding-top: 72px;
-	padding-left: 64px;
-}
 
+	background-image: url(../images/hero/hero-1x.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: 243px;
+}
 .hero__title {
 	width: 100%;
 	max-width: 486px;
@@ -48,19 +51,53 @@
 }
 
 .hero-header__menu {
-	width: 328px;
+	position: relative;
+	width: 100%;
+	max-width: 328px;
 	padding-top: 72px;
 	padding-left: 56px;
 
+	box-sizing: border-box;
+
 	background-color: var(--section-bcg);
+}
+
+.hero-header__chart-button {
+	margin-bottom: 118px;
+}
+.hero-header__burger-button {
+	position: absolute;
+	left: 56px;
+	top: 119px;
 }
 
 .menu-icon {
 	fill: var(--menu-f-color);
 }
 
+.chart-icon {
+	margin-bottom: 10px;
+}
+
+.burger-icon {
+	margin-bottom: 108px;
+}
+
 .page-nav__link {
+	display: block;
 	font-weight: 700;
 	@include font-line(16px, 22px);
 	color: var(--menu-f-color);
+}
+
+.page-nav__items {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+	.hero-header__burger-button {
+		display: none;
+	}
 }
