@@ -75,10 +75,15 @@
 	background-color: var(--section-bcg);
 }
 
-.hero-header__burger-button {
+.hero-header__burger-button,
+.hero-header__cancel-button {
 	position: absolute;
 	top: 69px;
 	left: 10px;
+}
+
+.hiddenBtn {
+	display: none;
 }
 
 .menu-icon {
@@ -127,11 +132,16 @@
 		right: -172px;
 	}
 
+	.hero-header__menu--open {
+		right: -70px;
+	}
+
 	.hero-header__chart-button {
 		margin-bottom: 70px;
 	}
 
-	.page-nav {
+	.page-nav__link--hidden {
+		visibility: hidden;
 	}
 }
 
@@ -150,7 +160,8 @@
 		padding-left: 56px;
 	}
 
-	.hero-header__burger-button {
+	.hero-header__burger-button,
+	.hero-header__cancel-button {
 		display: none;
 	}
 
