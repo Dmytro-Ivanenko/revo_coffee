@@ -51,3 +51,18 @@ button {
 a {
 	text-decoration: none;
 }
+
+.section-title {
+	text-align: center;
+	margin-bottom: 68px;
+
+	@include font-line(20px, 24px);
+	font-weight: 600;
+	color: var(--main-title-f-color);
+}
+
+.section-title--acc {
+	font-family: "Montserrat";
+	@include font-line(30px, 34px);
+	font-weight: 900;
+}

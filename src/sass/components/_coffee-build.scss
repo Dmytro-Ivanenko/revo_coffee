@@ -1,0 +1,22 @@
+.coffee-build {
+	margin-bottom: 128px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1104px;
+	width: 100%;
+}
+
+.coffee-build__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 66px;
+}
+
+.coffee-build__item {
+	text-align: center;
+	display: block;
+
+	width: 226px;
+	height: 246px;
+}
