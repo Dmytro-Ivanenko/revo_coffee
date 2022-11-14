@@ -1,16 +1,19 @@
 .coffee-build {
 	margin-bottom: 128px;
-	margin-right: auto;
-	margin-left: auto;
 	max-width: 1104px;
-	width: 100%;
 }
 
 .coffee-build__list {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 66px;
+
+	@media screen and (max-width: 767px) {
+		gap: 15px;
+	}
+	@media screen and (min-width: 768px) {
+		gap: 66px;
+	}
 }
 
 .coffee-build__item {
@@ -19,4 +22,14 @@
 
 	width: 226px;
 	height: 246px;
+
+	font-weight: 300;
+	color: var(--main-f-color);
+	@include font-line(16px, 21px);
+}
+
+.coffee-build__item-title {
+	font-weight: 700;
+	color: var(--other-title-f-color);
+	@include font-line(24px, 28px);
 }

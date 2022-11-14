@@ -63,6 +63,12 @@ a {
 
 .section-title--acc {
 	font-family: "Montserrat";
-	@include font-line(30px, 34px);
 	font-weight: 900;
+
+	@media screen and (max-width: 767px) {
+		@include font-line(25px, 28px);
+	}
+	@media screen and (min-width: 768px) {
+		@include font-line(30px, 34px);
+	}
 }
